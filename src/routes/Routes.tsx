@@ -8,11 +8,7 @@ export const Routes = () => {
     return (
         <NavigationContainer>
             <Navigator>
-                <Screen
-                    name="Home"
-                    component={Home}
-                    options={{ headerTitleAlign: "center", headerTitle: "Calculadora de Amostras" }}
-                />
+                <Screen name="Home" component={Home} options={{ headerShown: false }} />
             </Navigator>
         </NavigationContainer>
     );

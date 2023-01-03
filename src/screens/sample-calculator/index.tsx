@@ -1,10 +1,11 @@
 import { StatusBar, Text } from "react-native";
+import { Container } from "@/common";
 
 export const SampleCalculator = () => {
     return (
-        <>
-            <StatusBar barStyle="light-content" backgroundColor="#52307c" />
+        <Container>
+            <StatusBar barStyle="light-content" />
             <Text>Em breve...</Text>
-        </>
+        </Container>
     );
 };

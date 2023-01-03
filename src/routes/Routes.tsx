@@ -1,18 +1,17 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createDrawerNavigator } from "@react-navigation/drawer";
-import { Home } from "@/pages";
+import { SampleCalculator } from "@/screens";
 
 const { Navigator, Screen } = createDrawerNavigator();
 
 export const Routes = () => {
     return (
         <NavigationContainer>
-            <Navigator>
+            <Navigator initialRouteName="Calculadora de amostras">
                 <Screen
-                    name="Home"
-                    component={Home}
+                    name="Calculadora de amostras"
+                    component={SampleCalculator}
                     options={{
-                        headerTitle: "Calculadora de amostras",
                         headerTitleAlign: "center",
                         headerStyle: { backgroundColor: "#8a00c2" },
                         headerTitleStyle: { color: "#ffffff" },

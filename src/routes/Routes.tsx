@@ -11,7 +11,7 @@ export const Routes = () => {
                 initialRouteName="Módulos"
                 screenOptions={{
                     headerTitleAlign: "center",
-                    headerStyle: { backgroundColor: "#8a00c2" },
+                    headerStyle: { backgroundColor: "#82a6b1" },
                     headerTitleStyle: { color: "#ffffff" },
                     headerTintColor: "#ffffff"
                 }}

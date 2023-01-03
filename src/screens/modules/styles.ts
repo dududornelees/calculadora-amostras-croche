@@ -1,6 +1,6 @@
 import styled from "styled-components/native";
 
 export const PrimaryColor = styled.Text`
-    color: #8a00c2;
+    color: ${(props) => props.theme.colors.primary};
     font-weight: 500;
 `;

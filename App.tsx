@@ -1,4 +1,6 @@
 import { Routes } from "@/routes";
+import { DefaultTheme } from "@/themes";
+import { ThemeProvider } from "styled-components/native";
 import { useFonts } from "expo-font";
 import "react-native-gesture-handler";
 
@@ -9,5 +11,9 @@ export default function App() {
         "Josefin-Sans-Bold": require("./assets/fonts/JosefinSans-Bold.ttf")
     });
 
-    return fontsLoaded ? <Routes /> : null;
+    return fontsLoaded ? (
+        <ThemeProvider theme={DefaultTheme}>
+            <Routes />
+        </ThemeProvider>
+    ) : null;
 }

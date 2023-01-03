@@ -1,5 +1,6 @@
 import { Routes } from "@/routes";
 import { useFonts } from "expo-font";
+import "react-native-gesture-handler";
 
 export default function App() {
     const [fontsLoaded] = useFonts({

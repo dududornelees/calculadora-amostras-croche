@@ -1,6 +1,7 @@
+import { StatusBar } from "react-native";
 import { Routes } from "@/routes";
-import { DefaultTheme } from "@/themes";
 import { ThemeProvider } from "styled-components/native";
+import { DefaultTheme } from "@/themes";
 import { useFonts } from "expo-font";
 import "react-native-gesture-handler";
 
@@ -13,6 +14,7 @@ export default function App() {
 
     return fontsLoaded ? (
         <ThemeProvider theme={DefaultTheme}>
+            <StatusBar barStyle="light-content" backgroundColor={DefaultTheme.colors.primary} />
             <Routes />
         </ThemeProvider>
     ) : null;

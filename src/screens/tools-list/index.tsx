@@ -5,7 +5,7 @@ import * as S from "./styles";
 export const ToolsList = () => {
     return (
         <Container>
-            <S.TextJustify>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem</S.TextJustify>
+            <S.TextCenter>Lorem ipsum Lorem ipsum</S.TextCenter>
             <ToolCard title="Calc. de amostras" route="Calculadora de amostras" />
         </Container>
     );

@@ -1,23 +1,34 @@
 import { NavigationContainer } from "@react-navigation/native";
-import { createDrawerNavigator } from "@react-navigation/drawer";
-import { Modules, SampleCalculator } from "@/screens";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { ToolsList, SampleCalculator } from "@/screens";
 
-const { Navigator, Screen } = createDrawerNavigator();
+const { Navigator, Screen } = createNativeStackNavigator();
 
 export const Routes = () => {
     return (
         <NavigationContainer>
-            <Navigator
-                initialRouteName="Módulos"
-                screenOptions={{
-                    headerTitleAlign: "center",
-                    headerStyle: { backgroundColor: "#82a6b1" },
-                    headerTitleStyle: { color: "#ffffff" },
-                    headerTintColor: "#ffffff"
-                }}
-            >
-                <Screen name="Módulos" component={Modules} />
-                <Screen name="Calculadora de amostras" component={SampleCalculator} />
+            <Navigator initialRouteName="Módulos">
+                <Screen
+                    name="Mundo Crochê"
+                    component={ToolsList}
+                    options={{
+                        headerTitleAlign: "center",
+                        headerStyle: { backgroundColor: "#2978a0" },
+                        headerTitleStyle: { color: "#ffffff" },
+                        headerTintColor: "#ffffff"
+                    }}
+                />
+
+                <Screen
+                    name="Calculadora de amostras"
+                    component={SampleCalculator}
+                    options={{
+                        headerTitle: "",
+                        headerStyle: { backgroundColor: "#f2f2f2" },
+                        headerShadowVisible: false,
+                        headerTintColor: "#2978a0"
+                    }}
+                />
             </Navigator>
         </NavigationContainer>
     );

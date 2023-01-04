@@ -1,7 +1,7 @@
 export const DefaultTheme = {
-    borderRadius: "8px",
+    borderRadius: "12px",
     colors: {
-        primary: "#82a6b1",
-        secondary: "#726953"
+        primary: "#2978a0",
+        secondary: "#253031"
     }
 };

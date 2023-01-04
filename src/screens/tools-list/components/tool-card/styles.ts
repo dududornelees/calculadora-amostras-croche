@@ -7,9 +7,11 @@ export const Button = styled.TouchableOpacity`
     height: 50px;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
 `;
 
 export const Text = styled.Text`
-    font-size: 18px;
+    font-size: 16px;
     color: white;
+    text-align: center;
 `;

@@ -2,7 +2,7 @@ import { useNavigation } from "@react-navigation/native";
 import * as S from "./styles";
 import * as P from "./props";
 
-export const ModuleCard = ({ title, route }: P.Props) => {
+export const ToolCard = ({ title, route }: P.Props) => {
     const { navigate } = useNavigation();
 
     return (

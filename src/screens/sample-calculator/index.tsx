@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Container, DashedInput } from "@/common";
-import { CalcButtons } from "./components";
+import { CalcButtons, Results } from "./components";
 
 export const SampleCalculator = () => {
     const [qtdPoints, setQtdPoint] = useState("");
@@ -47,6 +47,7 @@ export const SampleCalculator = () => {
             <DashedInput placeholder="Altura desejada" type="numeric" state={wishedHeight} setState={setWishedHeight} />
 
             <CalcButtons />
+            <Results />
         </Container>
     );
 };
